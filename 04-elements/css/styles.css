@@ -33,12 +33,14 @@
 1. PRIMARY STYLES
 --------------------------------- */
 
-html{ font-size: 100%; height: 100%; overflow-x: hidden; margin: 0px;  padding: 0px; touch-action: manipulation; }
+html{ font-size: 100%;  min-height: 100%;overflow-x: hidden; margin: 0px;  padding: 0px; touch-action: manipulation; }
 
 
-body{ font-size: 16px; font-family: 'Poppins', serif; width: 100%; height: 100%; margin: 0; font-weight: 400;
+body{ font-size: 16px; font-family: 'Poppins', serif;  height: 100%; margin: 0; margin: 0;
+	background-repeat: no-repeat!important;
+    background-attachment: fixed!important;
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; 
-	color: rgb(122, 0, 0); }
+	background: linear-gradient(-90deg, pink 35%, #590061)!important; }
 
 h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, input, button{ margin: 0; padding: 0; }
 
@@ -46,13 +48,13 @@ h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
 
 h1,h2,h3{ font-family: 'Poppins', cursive; }
 
-p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #777; }
+p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: rgb(0, 0, 0); text-align: center;}
 
 h1{ font-size: 4em; line-height: 1; }
-h2{ font-size: 3em; line-height: 1.1; color: white}
+h2{ font-size: 3em; line-height: 1.1; color: rgb(0, 0, 0)}
 h3{ font-size: 1.8em; color: white}
 h4{ font-size: 1.3em; color: rgb(255, 255, 255)}
-h5{ font-size: 1em; color:rgb(255, 255, 255)}
+h5{ font-size: 1em; color:rgb(41, 26, 26); font-weight: 600;}
 h6{ font-size: .9em; letter-spacing: 1px; }
 
 a, button{ display: inline-block; text-decoration: none; color: inherit; line-height: 1; 
@@ -60,9 +62,11 @@ a, button{ display: inline-block; text-decoration: none; color: inherit; line-he
 
 a:focus, a:active, a:hover,
 button:focus, button:active, button:hover,
-a b.light-color:hover{ text-decoration: none; color: #FFA804; }
+a b.light-color:hover{ text-decoration: none; color: rgb(151, 0, 93); }
 
 b{ font-weight: 600; }
+
+
 
 img{ width: 100%; }
 
@@ -78,18 +82,20 @@ button{ outline: 0; border: 0; background: none; cursor: pointer; }
 
 b.max-bold{ font-weight: 700; }
 
-
+.container{
+	background: transparent;
+}
 
 /* ---------------------------------
 2. COMMONS FOR PAGE DESIGN
 --------------------------------- */
 
-.section{ padding: 20px 0 70px; }
+.section{ padding: 20px 0 10px; }
 
-.section .heading{ margin-bottom: 60px; }
+.section .heading{ margin-bottom: 30px; }
 
 .section .heading:before{ content:''; height: 10px; width: 50px; border-radius: 5px;
-	margin-bottom: 20px; display: block; background: #952894; }
+	margin-bottom: 10px; display: block; background: #ffffff; }
 	
 .margin-t-10{ margin-top: 5px; }
 
@@ -101,12 +107,15 @@ b.max-bold{ font-weight: 700; }
 .margin-tb-30{ margin-top: 30px; margin-bottom: 30px; }
 .margin-tb-10{ margin-top: 5px; margin-bottom: 30px; }
 
-.font-yellow{ color: #311436; font-weight: 20;}
+.font-yellow{ color: #3a3838; font-weight: 20;}
 
 .font-semi-white{ color: #ddd; }
 
 .font-lite-black{ color: #999; }
 
+/* .roles:hover{
+	color: pink;
+} */
 
 /* ---------------------------------
 3. HEADER
@@ -147,24 +156,28 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 	}
 }
 
-.intro-section{ z-index: 4; background-color:repeating-linear-gradient(-45deg,#FFCCCC,#5e0d6e); animation: purples 15s ease infinite;}
+.intro-section{ z-index: 4; background-color:transparent; animation: purples 15s ease infinite;}
 
 .intro-section:before{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-size: 400% 400%;
-	background:repeating-linear-gradient(-45deg,#FFCCCC,#5e0d6e); animation: purples 15s ease infinite;}
+	background:transparent; animation: purples 15s ease infinite;}
 
+
+center{
+	background: transparent;
+}
 
 .intro{ margin-top: 10px; text-align: center; }
 
-.intro .profile-img{ height: 300px; width: 300px; border-radius: 100px; margin: 0 auto; 
+.intro .profile-img{ height: 200px; width: 200px; border-radius: 100px; margin: 0 auto; 
 	overflow: hidden; position: relative; top: -160px; margin-bottom: -125px;  }
 
-.intro .information > li{ display: block; background:repeating-linear-gradient(-45deg,#FFCCCC,#5e0d6e)}
+.intro .information > li{ display: block; background:transparent}
 
 .intro .social-icons > li > a{ height: 60px; line-height: 20px; width: 60px; border-radius: 10px; font-size: 60px;
 	overflow: hidden; z-index: 1; position: relative; margin: 0px 20px 5px; background: #887392; color: #fff; }
 
 .intro .social-icons > li > a:after{ content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-	top: 0; z-index: -1; border-radius: 10px; background: repeating-linear-gradient(-45deg,#FFCCCC,#5e0d6e); 
+	top: 0; z-index: -1; border-radius: 10px; background: repeating-linear-gradient(-45deg,#FFCCCC,#33003d); 
 	-webkit-transition: all .2s ease; transition: all .2s ease;
 	-webkit-transform: scale(0); transform: scale(0); }
 
@@ -186,7 +199,7 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
     font-family: "the name of the font icon you are using";
 }
 
-.btn-section{ padding-top: 20px; }
+.btn-section{ padding-top: 5px; background-color: transparent;}
 
 .btn{ margin: 0 10px 10px; padding: 12px 30px; border-radius: 5px; }
 
@@ -281,8 +294,7 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 --------------------------------- */
 
 
-.line-icon{ display: block; height: 200px; width: 200px; background-size: cover; }
-
+.line-icon{margin: auto; display: block; height: 230px; width: 320px; background-size: cover; }
 .icon-rocket{ background-image: url(../../images/logos.png); background-position: 0px 0; }
 .icon-rocket:hover{ filter: brightness(70%); }
 .icon-cut{ background-image: url(../../images/elearning.png); background-position: 0px 0; }
