@@ -40,7 +40,7 @@ body{ font-size: 16px; font-family: 'Poppins', serif;  height: 100%; margin: 0; 
 	background-repeat: no-repeat!important;
     background-attachment: fixed!important;
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; 
-	background: linear-gradient(80deg, pink 35%, #590061)!important; }
+	background: linear-gradient(80deg, pink 45%, #781481)!important; }
 
 h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, input, button{ margin: 0; padding: 0; }
 
