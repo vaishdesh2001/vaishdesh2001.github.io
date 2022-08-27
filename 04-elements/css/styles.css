@@ -33,6 +33,11 @@
 1. PRIMARY STYLES
 --------------------------------- */
 
+:root {
+	--primary: #94a6c9;
+	--secondary: rgb(21, 44, 108);
+  }
+
 html{ font-size: 100%;  min-height: 100%;overflow-x: hidden; margin: 0px;  padding: 0px; touch-action: manipulation; }
 
 
@@ -46,7 +51,7 @@ body{ font-size: 16px; font-family: 'Josefin Sans', serif;  height: 100%; margin
 	background-repeat: no-repeat!important;
 	background-attachment: fixed!important;
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; 
-	background: #94a6c9!important; }
+	background: var(--primary)!important; }
 
 h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, input, button{ margin: 0; padding: 0; }
 
@@ -61,11 +66,11 @@ h3{ font-family: 'brownsugar', sans-serif; }
 
 p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: rgb(0, 0, 0); text-align: center;}
 
-h1{ font-size: 5.5em; line-height: 1; color: rgb(69, 75, 181)}
-h2{ font-size: 3em; line-height: 1.1; color: rgb(69, 75, 181)}
+h1{ font-size: 5.5em; line-height: 1; color: var(--secondary)}
+h2{ font-size: 3em; line-height: 1.1; color: var(--secondary)}
 h3{ font-size: 2em; color: rgb(255, 255, 255)}
-h4{ font-size: 1.49em; color: rgb(255, 255, 255);}
-h5{ font-size: 1em; color:rgb(69, 75, 181); font-weight: 600;}
+h4{ font-size: 1.3em; color: var(--secondary);}
+h5{ font-size: 1em; color:var(--secondary); font-weight: 600;}
 h6{ font-size: .9em; letter-spacing: 1px; }
 
 a, button{ display: inline-block; text-decoration: none; color: inherit; line-height: 1; 
@@ -190,7 +195,7 @@ center{
 .intro .information > li{ display: block; background:transparent}
 
 .intro .social-icons > li > a{ height: 60px; line-height: 20px; width: 60px; border-radius: 10px; font-size: 60px;
-	overflow: hidden; z-index: 1; position: relative; margin: 0px 20px 5px; background: rgb(69, 75, 181); color: #fff; }
+	overflow: hidden; z-index: 1; position: relative; margin: 0px 20px 5px; background: var(--secondary); color: #fff; }
 
 .intro .social-icons > li > a:after{ content: ''; position: absolute; bottom: 0; left: 0; right: 0;
 	top: 0; z-index: -1; border-radius: 10px; background: repeating-linear-gradient(-45deg,hsl(205, 100%, 85%),#5161dd); 
@@ -316,7 +321,8 @@ center{
 .icon-rocket:hover{ filter: brightness(70%); }
 .icon-cut{ background-image: url(../../images/elearning.png); background-position: 0px 0; }
 .icon-cut:hover{ filter: brightness(70%); }
-.icon-star{ background-image: url(../../images/dumbbells.jpg); background-position: 0px 0; }
+.icon-star{ background-image: url(../../images/sat-img.png); background-position: 0px 0; }
+.icon-health{ background-image: url(../../images/dumbbells.jpg); background-position: 0px 0; }
 .icon-star:hover{ filter: brightness(70%); }
 
 
